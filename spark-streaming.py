@@ -51,10 +51,9 @@ df_transformed = df_transformed.withColumn("Amount", expr("substring(Amount, 2)"
 query = df_transformed.writeStream \
     .outputMode("append") \
     .format("parquet") \
-    .outputMode("overwrite")\
-    .option("path", "hdfs://localhost:9000/user/thanh/streaming_card_data") \
-    .option("checkpointLocation", "hdfs://localhost:9000/user/thanh/checkpoints") \
     .partitionBy("Year", "Month", "Day")\
+    .option("path", "hdfs://127.0.0.1:9000/user/thanh/credit_card")\
+    .option("checkpointLocation", "hdfs://127.0.0.1:9000/user/thanh/checkpoints") \
     .start()
 
 # Wait for the real-time processing to finish
