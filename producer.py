@@ -30,8 +30,8 @@ def read_csv_and_send(producer,file_path,topic):
                         producer.produce(topic, value=row.to_json())
                         print(row.to_json())
                         producer.poll(1000)  
-                        # random_sleep_time = random.uniform(1, 3)
-                        # time.sleep(random_sleep_time)
+                        random_sleep_time = random.uniform(1, 1)
+                        time.sleep(random_sleep_time)
 
                 producer.flush()
 

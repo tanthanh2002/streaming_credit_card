@@ -1,0 +1,11 @@
+[2023-12-25T11:25:57.904+0700] {processor.py:161} INFO - Started process (PID=6680) to work on /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2023-12-25T11:25:57.905+0700] {processor.py:830} INFO - Processing file /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2023-12-25T11:25:57.905+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:57.905+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2023-12-25T11:25:57.908+0700] {processor.py:840} INFO - DAG(s) 'example_trigger_controller_dag' retrieved from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2023-12-25T11:25:57.989+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:57.988+0700] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_trigger_controller_dag
+[2023-12-25T11:25:57.998+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:57.997+0700] {override.py:1769} INFO - Created Permission View: can read on DAG:example_trigger_controller_dag
+[2023-12-25T11:25:58.003+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:58.002+0700] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_trigger_controller_dag
+[2023-12-25T11:25:58.003+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:58.003+0700] {dag.py:3033} INFO - Sync 1 DAGs
+[2023-12-25T11:25:58.012+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:58.011+0700] {dag.py:3055} INFO - Creating ORM DAG for example_trigger_controller_dag
+[2023-12-25T11:25:58.021+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:58.020+0700] {dag.py:3820} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00, run_after=2021-01-01T00:00:00+00:00
+[2023-12-25T11:25:58.035+0700] {processor.py:183} INFO - Processing /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.133 seconds

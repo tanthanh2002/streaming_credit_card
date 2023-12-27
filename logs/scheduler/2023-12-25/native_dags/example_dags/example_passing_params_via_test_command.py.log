@@ -1,0 +1,11 @@
+[2023-12-25T11:25:53.197+0700] {processor.py:161} INFO - Started process (PID=6637) to work on /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2023-12-25T11:25:53.198+0700] {processor.py:830} INFO - Processing file /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2023-12-25T11:25:53.199+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.199+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2023-12-25T11:25:53.208+0700] {processor.py:840} INFO - DAG(s) 'example_passing_params_via_test_command' retrieved from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2023-12-25T11:25:53.291+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.290+0700] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_passing_params_via_test_command
+[2023-12-25T11:25:53.300+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.298+0700] {override.py:1769} INFO - Created Permission View: can read on DAG:example_passing_params_via_test_command
+[2023-12-25T11:25:53.306+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.305+0700] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_passing_params_via_test_command
+[2023-12-25T11:25:53.306+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.306+0700] {dag.py:3033} INFO - Sync 1 DAGs
+[2023-12-25T11:25:53.314+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.314+0700] {dag.py:3055} INFO - Creating ORM DAG for example_passing_params_via_test_command
+[2023-12-25T11:25:53.322+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:53.322+0700] {dag.py:3820} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2023-12-25T04:24:00+00:00, run_after=2023-12-25T04:25:00+00:00
+[2023-12-25T11:25:53.335+0700] {processor.py:183} INFO - Processing /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.140 seconds

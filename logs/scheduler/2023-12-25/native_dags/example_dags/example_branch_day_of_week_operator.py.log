@@ -1,0 +1,11 @@
+[2023-12-25T11:26:17.492+0700] {processor.py:161} INFO - Started process (PID=6718) to work on /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2023-12-25T11:26:17.493+0700] {processor.py:830} INFO - Processing file /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2023-12-25T11:26:17.494+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.494+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2023-12-25T11:26:17.505+0700] {processor.py:840} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2023-12-25T11:26:17.580+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.578+0700] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_weekday_branch_operator
+[2023-12-25T11:26:17.587+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.586+0700] {override.py:1769} INFO - Created Permission View: can read on DAG:example_weekday_branch_operator
+[2023-12-25T11:26:17.591+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.591+0700] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_weekday_branch_operator
+[2023-12-25T11:26:17.591+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.591+0700] {dag.py:3033} INFO - Sync 1 DAGs
+[2023-12-25T11:26:17.598+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.598+0700] {dag.py:3055} INFO - Creating ORM DAG for example_weekday_branch_operator
+[2023-12-25T11:26:17.606+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:26:17.606+0700] {dag.py:3820} INFO - Setting next_dagrun for example_weekday_branch_operator to 2023-12-24T00:00:00+00:00, run_after=2023-12-25T00:00:00+00:00
+[2023-12-25T11:26:17.619+0700] {processor.py:183} INFO - Processing /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 0.131 seconds

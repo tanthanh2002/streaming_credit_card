@@ -8,6 +8,7 @@ master = "spark://thanh-asus-tuf:7077"
 spark = SparkSession.builder \
     .master(master) \
     .appName(appName) \
+    .enableHiveSupport() \
     .getOrCreate()
 
 # Define schema
@@ -47,14 +48,23 @@ df_transformed = df_transformed.withColumn("Time", concat_ws(":", col("Time"), l
 
 df_transformed = df_transformed.withColumn("Amount", expr("substring(Amount, 2)").cast("float")*24000)
 
+df_transformed = df_transformed.withColumn("created_date", current_date())
+
+df_transformed = df_transformed.filter(col(Is_Fraud) == "No")
+
+
 # Display streaming data
 query = df_transformed.writeStream \
     .outputMode("append") \
     .format("parquet") \
-    .partitionBy("Year", "Month", "Day")\
+    .partitionBy("year","month") \
     .option("path", "hdfs://127.0.0.1:9000/user/thanh/credit_card")\
     .option("checkpointLocation", "hdfs://127.0.0.1:9000/user/thanh/checkpoints") \
     .start()
 
 # Wait for the real-time processing to finish
 query.awaitTermination()
+
+
+
+#spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 spark-streaming.py

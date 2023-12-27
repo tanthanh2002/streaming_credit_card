@@ -1,0 +1,11 @@
+[2023-12-25T11:25:54.461+0700] {processor.py:161} INFO - Started process (PID=6663) to work on /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2023-12-25T11:25:54.462+0700] {processor.py:830} INFO - Processing file /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2023-12-25T11:25:54.463+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.463+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2023-12-25T11:25:54.480+0700] {processor.py:840} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2023-12-25T11:25:54.600+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.600+0700] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2023-12-25T11:25:54.606+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.606+0700] {override.py:1769} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2023-12-25T11:25:54.610+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.610+0700] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2023-12-25T11:25:54.611+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.610+0700] {dag.py:3033} INFO - Sync 1 DAGs
+[2023-12-25T11:25:54.618+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.617+0700] {dag.py:3055} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2023-12-25T11:25:54.618+0700] {logging_mixin.py:188} INFO - [2023-12-25T11:25:54.618+0700] {dag.py:3820} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2023-12-25T11:25:54.629+0700] {processor.py:183} INFO - Processing /home/thanh/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.173 seconds
