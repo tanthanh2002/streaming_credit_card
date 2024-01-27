@@ -37,4 +37,4 @@ def load_to_database(hdfs_path,properties, table_name, jdbc_url,year = None, mon
     # .mode("append") \
     # .jdbc(url=jdbc_url, table=table_name, properties=properties)
 
-load_to_database(hdfs_path,properties,table_name,jdbc_url,)
+load_to_database(hdfs_path,properties,table_name,jdbc_url)

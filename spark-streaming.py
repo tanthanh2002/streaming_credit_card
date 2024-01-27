@@ -1,6 +1,7 @@
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, TimestampType, BooleanType
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col, concat_ws, lit, expr
+from datetime import datetime
 
 appName = "Credit_card_streaming"
 master = "spark://thanh-asus-tuf:7077"
@@ -48,9 +49,9 @@ df_transformed = df_transformed.withColumn("Time", concat_ws(":", col("Time"), l
 
 df_transformed = df_transformed.withColumn("Amount", expr("substring(Amount, 2)").cast("float")*24000)
 
-df_transformed = df_transformed.withColumn("created_date", current_date())
+df_transformed = df_transformed.withColumn("created_date", lit(datetime.now()))
 
-df_transformed = df_transformed.filter(col(Is_Fraud) == "No")
+df_transformed = df_transformed.filter(col("Is_Fraud") == "No")
 
 
 # Display streaming data
