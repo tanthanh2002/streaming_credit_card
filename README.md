@@ -1,4 +1,4 @@
-# Streaming Creadit Card Processing
+# Streamming Creadit Card Processing
 ## Introduction
 This project aims to simulate a data pipeline for processing streaming data using Apache Kafka, Apache Spark, Hadoop, and Apache Airflow. The pipeline reads data from a CSV file, sends it through Kafka for streaming, processes it with Spark, and stores it into Hadoop as a data lake partitioned by year and month. Additionally, at the end of each month, the pipeline extracts data from the data lake and loads it into PostgreSQL as a data warehouse using Apache Airflow.
 
